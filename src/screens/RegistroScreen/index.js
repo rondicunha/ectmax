@@ -19,20 +19,23 @@ export default function Login({ navigation }) {
 
   const registro = () => {
     const auth = getAuth()
+    if(errorCadastro) {
+      setErrorCadastro(false)
+    }
+
     createUserWithEmailAndPassword(auth, email, password)
       .then(userCredential => {
-        if(errorCadastro) {
-          setErrorCadastro(false)
-        }
 
         // Signed in
         const user = userCredential.user
         navigation.navigate('HomeScreen', { idUser: user.uid })
+        console.log("Cadastrou")
         // ...
       })
       .catch(error => {
         setErrorCadastro(true)
         console.log(error)
+        console.log("Deu error")
         const errorCode = error.code
         const errorMessage = error.message
         // ..

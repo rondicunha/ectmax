@@ -22,17 +22,21 @@ export default function Login({ navigation }) {
     if (errorLogin) {
       setErrorLogin(false)
     }
+    console.log('passo1')
+    console.log('entrando')
     signInWithEmailAndPassword(auth, email, password)
       .then(userCredential => {
         // Signed in
         const user = userCredential.user
         console.log(user)
-        navigation.navigate("HomeScreen", {idUser: user.uid})
+        navigation.navigate('HomeScreen', { idUser: user.uid })
+        console.log('Entrou')
         // ...
       })
       .catch(error => {
         setErrorLogin(true)
         console.log(error)
+        console.log("Deu erro")
         const errorCode = error.code
         const errorMessage = error.message
       })
@@ -79,7 +83,7 @@ export default function Login({ navigation }) {
           <Text style={styles.warningAlert}>Senha ou E-mail inválido!</Text>
         </View>
       )}
-      
+
       <TouchableOpacity
         disabled={email === '' || password === ''}
         onPress={loginFirebase}
