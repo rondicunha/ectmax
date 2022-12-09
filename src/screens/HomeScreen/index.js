@@ -1,10 +1,18 @@
+import { StatusBar } from 'expo-status-bar'
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View } from 'react-native'
+import styles from './styles'
 
-export default function Login({navigation}) {
+import Header from '../../components/Header'
+import Barra from '../../components/Barra'
+
+export default function HomeScreen({ navigation }) {
   return (
-    <View>
-      <Text>HOME</Text>
+    <View style={styles.container}>
+      <StatusBar style="auto" />
+
+      <Header />
+      <Barra navigation={navigation} />
     </View>
   )
 }

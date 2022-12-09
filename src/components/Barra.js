@@ -7,7 +7,7 @@ export default function Barra({ navigation }) {
   return (
     <ScrollView style={styles.barra}>
       <View style={styles.card}>
-        <Image style={styles.foto} source={require('../images/vga-img.jpeg')} />
+        <Image style={styles.foto} source={require('../images/vga-img.png')} />
 
         <Button
           style={styles.button}
@@ -19,7 +19,7 @@ export default function Barra({ navigation }) {
       <View style={styles.card}>
         <Image
           style={styles.foto}
-          source={require('../images/calculo1-img.jpg')}
+          source={require('../images/calculo-img.png')}
         />
 
         <Button
@@ -32,7 +32,7 @@ export default function Barra({ navigation }) {
       <View style={styles.card}>
         <Image
           style={styles.foto}
-          source={require('../images/preCalculo.jpg')}
+          source={require('../images/preCalculo-img.png')}
         />
 
         <Button
@@ -45,7 +45,7 @@ export default function Barra({ navigation }) {
       <View style={styles.card}>
         <Image
           style={styles.foto}
-          source={require('../images/quimica-img.jpeg')}
+          source={require('../images/quimica-img.png')}
         />
 
         <Button
@@ -66,7 +66,7 @@ export default function Barra({ navigation }) {
       </View>
 
       <View style={styles.card}>
-        <Image style={styles.foto} source={require('../images/cts-img.jpeg')} />
+        <Image style={styles.foto} source={require('../images/cts-img.png')} />
 
         <Button
           style={styles.button}
@@ -104,8 +104,5 @@ const styles = StyleSheet.create({
     borderRadius: 20
   },
 
-  button: {
-
-
-  },
+  button: {}
 })
