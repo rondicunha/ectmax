@@ -43,9 +43,12 @@ const styles = StyleSheet.create({
   registration: {
     fontSize: 17,
     marginTop: 25,
+    paddingRight: 8,
     color: '#B0C4DE'
   },
   linkSubscribe: {
+    fontSize: 17,
+    marginTop: 25,
     color: '#FFF'
   },
   warningAlert: {
@@ -53,7 +56,7 @@ const styles = StyleSheet.create({
     color: '#bdbdbd',
     fontSize: 16
   },
-  conteneAlert: {
+  contentAlert: {
     marginTop: 20,
     flexDirection: 'row',
     justifyContent: 'center',
