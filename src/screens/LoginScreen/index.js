@@ -26,13 +26,11 @@ export default function Login(navigation) {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
-        console.log(user);
         //navigation.navigate("HomeScreen", {idUser: user.uid})
         // ...
       })
       .catch((error) => {
         setErrorLogin(true);
-        console.log("nao achou")
         const errorCode = error.code;
         const errorMessage = error.message;
       });
