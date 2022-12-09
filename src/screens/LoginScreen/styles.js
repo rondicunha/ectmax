@@ -47,6 +47,17 @@ const styles = StyleSheet.create({
   },
   linkSubscribe: {
     color: '#FFF'
+  },
+  warningAlert: {
+    paddingLeft: 10,
+    color: '#bdbdbd',
+    fontSize: 16
+  },
+  conteneAlert: {
+    marginTop: 20,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 })
 
