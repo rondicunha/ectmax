@@ -6,15 +6,18 @@ const styles = StyleSheet.create({
     backgroundColor: '#003153',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: 50
+    paddingTop: 50,
+    
   },
   ect: {
     fontSize: 48,
-    color: '#228B22'
+    color: '#FFF',
+    fontWeight: 'bold'
   },
   max: {
     fontSize: 58,
-    color: '#FFF'
+    color: '#FFF',
+    fontWeight: 'bold'
   },
   input: {
     width: 300,
@@ -38,18 +41,20 @@ const styles = StyleSheet.create({
   },
   textButtonLogin: {
     color: '#fff',
-    fontSize: 20
+    fontSize: 20,
+    fontWeight: 'bold'
   },
   registration: {
     fontSize: 17,
     marginTop: 25,
     paddingRight: 8,
-    color: '#B0C4DE'
+    color: '#B0C4DE',
   },
   linkSubscribe: {
     fontSize: 17,
     marginTop: 25,
-    color: '#FFF'
+    color: '#FFF',
+    fontWeight: 'bold'
   },
   warningAlert: {
     paddingLeft: 10,
